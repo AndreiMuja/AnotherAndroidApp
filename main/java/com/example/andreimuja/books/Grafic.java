@@ -112,7 +112,7 @@ public class Grafic extends AppCompatActivity {
                             }
                         }
                         if (ok) {
-                            listaGenuri.add(Acasa.list.get(i).getGen());
+                            listaGenuri.add(MainActivity.list.get(i).getGen());
                         }
                     }
                 }

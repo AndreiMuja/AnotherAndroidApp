@@ -68,9 +68,9 @@ public class Grafic extends AppCompatActivity {
             }
             case R.id.preluare_carti_xml: {
                 if(item.isEnabled()) {
-                    if(Acasa.ok) {
-                        Acasa.preluareXML.execute("https://proiect-dam-svalentin.c9users.io/carti.xml");
-                        Acasa.ok = false;
+                    if(MainActivity.ok) {
+                        MainActivity.preluareXML.execute("https://andrmuja.c9users.io/carti.xml");
+                        MainActivity.ok = false;
                         finish();
                     } else {
                         Toast.makeText(Grafic.this, getString(R.string.eroareCitit), Toast.LENGTH_SHORT).show();
@@ -100,14 +100,14 @@ public class Grafic extends AppCompatActivity {
         }
 
         private void genuri() {
-            if (Acasa.list.size() != 0) {
-                for (int i = 0; i < Acasa.list.size(); i++) {
+            if (MainActivity.list.size() != 0) {
+                for (int i = 0; i < MainActivity.list.size(); i++) {
                     ok = true;
                     if (listaGenuri.size() == 0) {
-                        listaGenuri.add(Acasa.list.get(i).getGen());
+                        listaGenuri.add(MainActivity.list.get(i).getGen());
                     } else {
                         for (int j = 0; j < listaGenuri.size(); j++) {
-                            if (Acasa.list.get(i).getGen().equalsIgnoreCase(listaGenuri.get(j))) {
+                            if (MainActivity.list.get(i).getGen().equalsIgnoreCase(listaGenuri.get(j))) {
                                 ok = false;
                             }
                         }
@@ -127,8 +127,8 @@ public class Grafic extends AppCompatActivity {
                 numarCartiGen.add(0);
             }
             for (int i = 0; i < listaGenuri.size(); i++) {
-                for (int j = 0; j < Acasa.list.size(); j++) {
-                    if (listaGenuri.get(i).equalsIgnoreCase(Acasa.list.get(j).getGen())) {
+                for (int j = 0; j < MainActivity.list.size(); j++) {
+                    if (listaGenuri.get(i).equalsIgnoreCase(MainActivity.list.get(j).getGen())) {
                         numarCartiGen.set(i, numarCartiGen.get(i) + 1);
                     }
                 }

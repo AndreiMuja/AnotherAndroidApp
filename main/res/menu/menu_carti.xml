@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/autor"
+        android:orderInCategory="1"
+        android:title="@string/adauga"/>
+
+    <item
+        android:id="@+id/preluare_carti_xml"
+        android:orderInCategory="3"
+        android:title="@string/preluare_carti_xml" />
+    <item
+        android:id="@+id/grafic"
+        android:orderInCategory="4"
+        android:title="@string/grafic" />
+    <item
+        android:id="@+id/despre"
+        android:orderInCategory="5"
+        android:title="@string/despre" />
+
+</menu>

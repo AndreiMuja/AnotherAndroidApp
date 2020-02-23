@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.andreimuja.books.Adauga">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/autor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/autor"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/titlu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/titlu"
+            android:layout_below="@+id/autor"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/gen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titlu"
+            android:hint="@string/gen"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/pret"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gen"
+            android:hint="@string/pret"
+            android:inputType="numberDecimal" />
+
+        <RadioGroup
+            android:id="@+id/aspect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pret">
+
+            <RadioButton
+                android:id="@+id/nouRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nou" />
+
+            <RadioButton
+                android:id="@+id/deterioratRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/deteriorat" />
+        </RadioGroup>
+
+        <DatePicker
+            android:id="@+id/data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/aspect" />
+
+        <Button
+            android:id="@+id/actiuneB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/data"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+</ScrollView>

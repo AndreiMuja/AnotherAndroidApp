@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Bilet5</string>
+    <string name="acasa">Folositi meniul aplicatiei</string>
+    <string name="gen">Gen</string>
+    <string name="autor">Autor</string>
+    <string name="titlu">Titlu</string>
+    <string name="pret">Pret</string>
+    <string name="nou">Nou</string>
+    <string name="deteriorat">Deteriorat</string>
+    <string name="adauga">Adauga</string>
+    <string name="carti">Carti</string>
+    <string name="preluare_carti_xml">XML</string>
+    <string name="grafic">Grafic</string>
+    <string name="despre">Despre</string>
+    <string name="autorAplicatie">autorAplicatie</string>
+    <string name="editare">Editare</string>
+    <string name="eroareDate">eroareDate</string>
+    <string name="confirmareEditare">confirmare</string>
+    <string name="faraDate">fara date</string>
+    <string name="eroareCitit">eroare Citire din XML</string>
+    <string name="informare">Informare bd</string>
+    <string name="continutInfo">continut info bd</string>
+    <string name="atentionare">atentionare bd</string>
+    <string name="atentionareInfo">atentionare no data in db</string>
+</resources>
